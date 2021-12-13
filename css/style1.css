@@ -6,9 +6,38 @@ body {
 .container {
     width: 1100px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 .container .item {
     border-bottom: 1px solid black;
     height: 40px;
     overflow: hidden;
+    transition: .5s ease;
+}
+
+.container .active {
+    height: 100px !important;
+}
+
+.box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    background-color: red;
+}
+
+.line {
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+    transition: 1s ease;
+}
+.box:hover .line {
+    width: 100%;
+}
+
+input {
+    outline: none   ;
 }
